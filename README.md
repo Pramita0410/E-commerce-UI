@@ -15,6 +15,6 @@ Features:
 5. Placeholder Selectors.
 6. Mixins.
 7. Funtions.
-8. Import: Used immport in style.css
+8. Import: Used import in style.css
 9. Extend: Used in login.css
 
