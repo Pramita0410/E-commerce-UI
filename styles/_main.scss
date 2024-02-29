@@ -1,0 +1,57 @@
+// Assuming $primary_2 is defined elsewhere and %align-center is a placeholder for centering content
+$bubble_height: 100px;
+$bubble_width: 100px;
+$bubbleColor: rgba(255, 255, 255, 0.2); // Define the color for the bubbles
+
+@mixin bubble {
+  background-color: $bubbleColor;
+  border-radius: 50%;
+  margin: 0 1rem;
+  position: absolute;
+  height: $bubble_height;
+  width: $bubble_width;
+}
+
+@mixin position($property, $value) {
+  #{$property}: $value;
+}
+
+.container {
+  background-color: $primary_2;
+  padding: 2rem; // Increased padding for better spacing
+  margin: 2rem auto; // Adjusted margin for a better fit on the page
+  max-width: 80vw;
+  color: #fff; // Simplified color for better readability
+  border-radius: 0.5rem; // Reduced border radius for a more modern look
+  height: auto; // Changed to auto to accommodate content size
+  position: relative;
+  overflow: hidden;
+  @extend %align-center;
+  box-shadow: 0 2px 10px #ffbf5133; // Added shadow for depth
+
+  // Media query for smaller screens
+  @media screen and (max-width: 768px) {
+    max-width: 90vw;
+    margin: 2rem auto; // Ensure there's some margin on smaller screens
+  }
+
+  // Header styling within the container
+  &_header {
+    font-weight: 600; // Make it bold
+    font-size: 2rem; // Increase size for impact
+    color: #fff; // Adjusted for readability
+    margin-bottom: 1rem; // Space below the header
+  }
+
+  // Bubbles for decoration
+  &_bubble1 {
+    @include bubble;
+    @include position(top, -20px); // Adjust position to fit your design
+    @include position(left, -20px);
+  }
+  &_bubble2 {
+    @include bubble;
+    @include position(bottom, -20px);
+    @include position(right, -20px);
+  }
+}

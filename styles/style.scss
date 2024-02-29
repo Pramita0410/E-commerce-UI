@@ -1,0 +1,55 @@
+//variable declarations
+$primary_1: #ffffff;
+$background: #282a2f;
+$black: #0000;
+$primary_2: #da7c18;
+$primary_3: #7394b0;
+$primary-color : #5b412f;
+$bubbleColor: rgba(10, 10, 10, 0.2);
+
+//import sass
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Qwitcher+Grypen:wght@400;700&display=swap");
+@import "navigatebar";
+@import "main";
+@import "cont";
+@import "footer";
+@import "sub";
+@import "login";
+
+//placeholder selctors
+%align-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+%align-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+%align-center-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+//function
+@function square($number) {
+
+  @return #{$number * $number}px;
+}
+
+$font: square(2);
+
+//body calling variable
+body {
+  background: $background;
+}

@@ -1,0 +1,59 @@
+.subscribe {
+  padding: 1rem;
+  margin: 4rem auto;
+  max-width: 80vw;
+  color: #636b73;
+  border-radius: 20px;
+  background-color: $primary_2; // Variable for primary color
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; // Added to center content horizontally
+  height: 14vw;
+  text-align: center; // Center text alignment for the header
+
+  &_header {
+    font-weight: 500;
+    color: #fff;
+    margin-bottom: 1rem; // Space between header and form
+  }
+
+  &_form {
+    width: 100%; // Form takes the full width of its parent
+    display: flex;
+    flex-direction: row; // Side by side on larger screens
+    justify-content: center; // Center form elements horizontally
+    gap: 1rem; // Space between input and button
+
+    @media screen and (max-width: 768px) {
+      flex-direction: column; // Stack vertically on smaller screens
+      align-items: center; // Center items horizontally
+    }
+
+    &_input {
+      flex-grow: 1; // Input takes as much space as possible
+      padding: 0.5rem 1rem; // Adjust padding for consistency
+      border-radius: 10px;
+      border: none;
+      margin: 0; // Remove margin to allow flexbox to handle spacing
+      outline: none;
+      width: auto; // Allow width to be determined by flex-grow
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+
+    &_button {
+      padding: 0.5rem 1rem; // Match input padding for visual consistency
+      border-radius: 10px;
+      border: none;
+      width: auto; // Allow button to size according to its content
+
+      &:hover {
+        cursor: pointer;
+        background-color: darken($primary_2, 15%); // Darken button on hover for effect
+      }
+    }
+  }
+}
