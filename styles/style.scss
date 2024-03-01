@@ -16,25 +16,6 @@ $bubbleColor: rgba(10, 10, 10, 0.2);
 @import "sub";
 @import "login";
 
-//placeholder selctors
-%align-center {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-%align-between {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-%align-center-column {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 2rem;
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -52,4 +33,23 @@ $font: square(2);
 //body calling variable
 body {
   background: $background;
+}
+
+//placeholder selctors
+%align-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+%align-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+%align-center-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
 }

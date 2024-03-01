@@ -5,7 +5,7 @@ NUID: 002766881
 Email: sandhyan.p@northeastern.edu
 
 Features: 
-* Created a two-page website using CSS Grid layout/Flexbox and SASS/SCSS Features.
+* Created a two-page website using Two CSS Grid layout and Flexbox and SASS/SCSS Features.
 * Implemented a CSS Grid and a flexbox in the pages .
 * Implemented all the below SASS Features:
 1. Variables: Symbols that store values for reuse throughout SCSS files to maintain consistency and ease of updates.

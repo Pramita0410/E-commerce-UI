@@ -26,6 +26,36 @@
   cursor: pointer;
 }
 
+.search-container {
+  display: flex;
+  justify-content: center;
+  margin: 1rem;
+}
+.search-container form {
+  display: flex;
+  gap: 0.5rem;
+}
+.search-container form input[type=search] {
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+  max-width: 300px;
+}
+.search-container form button {
+  padding: 0.5rem 1rem;
+  background-color: #5b412f;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+}
+.search-container form button:hover {
+  background-color: #39291e;
+}
+
 .container {
   background-color: #da7c18;
   padding: 2rem;
@@ -71,40 +101,40 @@
   right: -20px;
 }
 
-.nft {
+.outfit {
   margin: 0 2rem;
 }
-.nft_header {
+.outfit_header {
   font-weight: 600;
   color: #fff;
 }
-.nft_container {
+.outfit_container {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   grid-gap: 1rem;
 }
 @media screen and (max-width: 768px) {
-  .nft_container {
+  .outfit_container {
     grid-template-columns: repeat(1, 1fr);
   }
 }
-.nft_container_element {
+.outfit_container_element {
   background-color: #000000;
   text-align: center;
   padding: 10px;
   border-radius: 10px;
   color: #fff;
 }
-.nft_container_element img {
+.outfit_container_element img {
   width: 90%;
   height: 80%;
   object-fit: cover;
   border-radius: 10px;
 }
-.nft_container_element h3 {
+.outfit_container_element h3 {
   font-weight: 300;
 }
-.nft_container_element p {
+.outfit_container_element p {
   font-weight: 300;
 }
 
@@ -197,14 +227,16 @@
 }
 
 .login-container-form {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 1rem;
   gap: 1.5rem;
   width: 50%;
 }
 @media screen and (max-width: 768px) {
   .login-container-form {
     width: 100%;
+    grid-template-columns: repeat(1, 1fr);
   }
 }
 .login-container-form_input {
@@ -219,7 +251,7 @@
 .login-container-form_input:focus {
   border: 2px solid #7394b0;
 }
-.login-container-form_button {
+.login-container-form .login-container-form_button {
   background-color: #7394b0;
   color: #fff;
   padding: 0.3rem 1rem;
@@ -227,8 +259,18 @@
   border: none;
   text-decoration: none;
 }
-.login-container-form_button:hover {
+.login-container-form .login-container-form_button:hover {
   cursor: pointer;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: #282a2f;
 }
 
 .container {
@@ -249,14 +291,4 @@
   justify-content: center;
   align-items: center;
   gap: 2rem;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  font-family: "Poppins", sans-serif;
-}
-
-body {
-  background: #282a2f;
 }

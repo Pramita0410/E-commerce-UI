@@ -4,18 +4,18 @@
   max-width: 80vw;
   color: #636b73;
   border-radius: 20px;
-  background-color: $primary_2; // Variable for primary color
+  background-color: $primary_2; 
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center; // Added to center content horizontally
+  align-items: center; 
   height: 14vw;
-  text-align: center; // Center text alignment for the header
+  text-align: center; 
 
   &_header {
     font-weight: 500;
     color: #fff;
-    margin-bottom: 1rem; // Space between header and form
+    margin-bottom: 1rem; 
   }
 
   &_form {

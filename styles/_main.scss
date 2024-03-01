@@ -1,4 +1,3 @@
-// Assuming $primary_2 is defined elsewhere and %align-center is a placeholder for centering content
 $bubble_height: 100px;
 $bubble_width: 100px;
 $bubbleColor: rgba(255, 255, 255, 0.2); // Define the color for the bubbles
@@ -17,7 +16,7 @@ $bubbleColor: rgba(255, 255, 255, 0.2); // Define the color for the bubbles
 }
 
 .container {
-  background-color: $primary_2;
+  background-color: #da7c18;
   padding: 2rem; // Increased padding for better spacing
   margin: 2rem auto; // Adjusted margin for a better fit on the page
   max-width: 80vw;
